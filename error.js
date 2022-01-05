@@ -21,6 +21,7 @@ class BadRequest extends GeneralError { }
 class NotFound extends GeneralError { }
 class InvalidParameter extends GeneralError { }
 class Timeout extends GeneralError { }
+class MissingEnvironmentVariable extends GeneralError { }
 
 module.exports = {
   Unauthorized,
@@ -28,5 +29,6 @@ module.exports = {
   BadRequest,
   NotFound,
   InvalidParameter,
-  Timeout
+  Timeout,
+  MissingEnvironmentVariable
 }
